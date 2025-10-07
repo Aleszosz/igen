@@ -11,13 +11,29 @@ body
 
 header
 {
-    background-color: rgb(255, 70, 162);
+    background-color: rgb(250, 26, 178);
     margin-right: 250px;
     margin-left: 250px;
     padding: 8px;
     border-color: black;
     border-style: solid;
     border-radius: 5px;
+}
+
+header img
+{
+    width: 100%;
+}
+
+a:hover {
+  background-color: yellow;
+}
+
+h1
+{
+    text-align: center;
+    color: rgb(250, 26, 178);
+    text-shadow: 5px 5px 5px yellow;
 }
 
 .box
@@ -34,7 +50,7 @@ header
     border-color: black;
     border-style: solid;
     border-radius: 5px;
-    background-color: rgb(255, 70, 162);
+    background-color: rgb(250, 26, 178);
 }
 
 article img
@@ -46,6 +62,12 @@ article img
     background-color: rgb(207, 0, 172)
 }
 
+iframe
+{
+    border-radius: 35px;
+    box-shadow: 5px 5px 5px yellow;  
+}
+
 footer
 {
     margin: 150px;
@@ -55,5 +77,6 @@ footer
     border-color: black;
     border-style: solid;
     border-radius: 5px;
-    background-color: rgb(255, 70, 162)
+    background-color: rgb(250, 26, 178);
 }
+
