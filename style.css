@@ -25,9 +25,11 @@ header img
     width: 100%;
 }
 
-ul
+.grid-container
 {
-    list-style-type:none;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 a
