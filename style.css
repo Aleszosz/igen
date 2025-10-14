@@ -27,21 +27,31 @@ header img
 
 .grid-container
 {
-    width: 60%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.grid-item
+{
+    margin-right: 5px;
+    text-align: center;
+    background-color: yellow;
+    border-radius: 5px;
+}
+
 a
 {
+    min-height: 15px;
+    text-align: center;
     text-decoration: none;
     color: cyan;
 }
 
 a:hover
 {
-    color: rgb(250, 26, 178);;
-    background-color: yellow;
+    color: yellow;;
+    background-color: cyan;
+    box-shadow: 5px 5px 5px yellow; 
 }
 
 h1
