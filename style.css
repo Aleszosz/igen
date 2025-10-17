@@ -77,6 +77,7 @@ h1
     border-style: solid;
     border-radius: 5px;
     background-color: rgb(250, 26, 178);
+    text-align: center;
 }
 
 article img
@@ -107,3 +108,23 @@ footer
     background-color: rgb(250, 26, 178);
 }
 
+th
+{
+    font-size: 25px;
+}
+td
+{
+    font-size: 20px;
+}
+
+#login
+{
+    width: 500px;
+    height: 40px;
+}
+
+.extra
+{
+    text-align: left;
+    margin-left: 590px;
+}

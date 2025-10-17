@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Rendelés</title>
 </head>
+
 <body>
 
     <header>
@@ -17,33 +19,74 @@
             <a class="grid-item" href="order.html">Rendelés</a>
         </div>
     </header>
-    
+
+    <div class="content">
         <form>
+            <fieldset>
+                <legend>Személyes adatok</legend>
+                <table align="center">
+                    <tr>
+                        <th><label for="name">Teljes név: *</label></th>
+                        <th><input type="text" id="login" required placeholder="Teljes név"></th>
+                    </tr>
+                    <tr>
+                        <th><label for="email">Email: *</label></th>
+                        <th><input type="email" id="login" required placeholder="Email"></th>
+                    </tr>
+                    <tr>
+                        <th><label for="address">Cím: *</label></th>
+                        <th><input type="text" id="login" required placeholder="Cím"></th>
+                    </tr>
+                </table>
+                <br>
+                <div>
+                    <label for="comment">Megjegyzés</label>
+                    <textarea name="comment" id="comment"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Rendelés</legend>
+                <span>Extra feltét:</span>
+                <div class="extra">
+                    <input type="radio" checked value="0" name="extra" id="nothing">
+                    <label for="">Nem kérek</label>
+                </div>
+                <div class="extra">
+                    <input type="radio" value="300" name="extra" id="sajt">
+                    <label for="">Sajt (+300)</label>
+                </div>
+                <div class="extra">
+                    <input type="radio" value="400" name="extra" id="bacon">
+                    <label for="">Bacon (+400)</label>
+                </div>
+                <br>
+                <div>
+                    <label for="sauce">Szósz:</label>
+                    <select name="sauce" id="sauce">
+                        <option value="0" selected>szósz</option>
+                        <option value="100" selected>szósz2</option>
+                        <option value="300" selected>szósz3</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="quantity">Mennyiség</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                </div>
+            </fieldset>
+            <br>
             <div>
-                <label for="name">Teljes név*</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-
-            <div>
-                <label for="email">Email cím*</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <div>
-                <label for="address">Cím*</label>
-                <input type="text" id="address" name="address" required>
-            </div>
-
-            <div>
-                <label for="comment">Megyjegyzés</label>
-                <textarea name="comment" id="comment" rows="5"></textarea>
+                <button onclick="sendOrderData();return false;">Rendelés leadása</button>
+                <div><label>Ár: <span id="message">0</span> Ft</label></div>
             </div>
         </form>
-   </div> 
+
+    </div>
 
     <footer>
         <p>Badzsao™</p>
     </footer>
 
 </body>
+
 </html
